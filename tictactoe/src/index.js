@@ -24,6 +24,10 @@ import './index.css';
         };
     }
 
+    renderSquare(i){
+      return <Square value={i} />;
+    }
+
     handleClick(i){
         const squares = this.state.squares.slice();
         squares[i] = 'X';
