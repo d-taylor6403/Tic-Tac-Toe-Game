@@ -15,7 +15,7 @@ import './index.css';
     
   
   class Board extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state={
             squares: Array(9).fill(null),
@@ -41,7 +41,8 @@ import './index.css';
     }
   
     render() {
-      const status = 'Next player: X';
+      const status = 'Next player: ' +
+      (this.state.xIsNext ? 'X' : 'O');
   
       return (
         <div>
